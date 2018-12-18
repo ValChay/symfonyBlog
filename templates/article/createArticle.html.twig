@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Creation d'article!{% endblock %}
+{% block title %} {{  'article.create.title' | trans }}{% endblock %}
 
 {% block body %}
 
 
     {{ form_start(myform) }}
     {{ form_widget(myform) }}
-    <input type="submit" value="Enregistrer">
+    <input class="primary" type="submit" value="{{ 'article.create.submit'| trans }}">
     {{ form_end(myform) }}
 {% endblock %}
