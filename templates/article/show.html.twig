@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {{ trans | article.cre }}{% endblock %}
+{% block title %} {{ 'article.show.title' | trans }}{% endblock %}
 
 
 {% block body %}
@@ -9,7 +9,7 @@
     <p>{{ article.body }}</p>
     
     {{ form_start(delete_form)}}
-    <input type="submit" value="Supprimer" name="supprimer" class="">
+    <input type="submit" value="{{ 'article.show.delete' | trans }}" name="supprimer" class="">
     {{ form_end(delete_form) }}
 {% endblock %}
 

@@ -13,8 +13,36 @@ article:
     title: Afficher l'article
     submit: Afficher article
     delete: Supprimer
+  entity:
+    title: titre
+    body: Body
+    published: Publication
+    author: Auteur
+
 author:
   delete_form:
     confirm: Are you sur you want to delete this ?
     submit: Supprimer
   form:
+    submit: Envoyer
+  entity:
+    name: Nom
+    job: Job
+    birth: Date de naissance
+    job_choices:
+      editor: Editeur
+      contributor: contributeur
+      freelance: Freelance
+  edit:
+    title: Editer un auteur
+    submit: Mettre à jour
+    back: Retour à la liste
+  index:
+    title: Liste des auteurs
+    actions: Actions
+    show: Voir
+    edit: Editer
+    not_found: Aucun auteur trouvé
+flash:
+  success:
+    article-created: Bravo pour lajout
