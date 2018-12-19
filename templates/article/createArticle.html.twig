@@ -4,9 +4,11 @@
 
 {% block body %}
 
+    <div class="form-group">
+        {{ form_start(myform) }}
+        {{ form_widget(myform) }}
+        <input class="primary" type="submit" value="{{ 'article.create.submit'| trans }}">
+        {{ form_end(myform) }}
+    </div>
 
-    {{ form_start(myform) }}
-    {{ form_widget(myform) }}
-    <input class="primary" type="submit" value="{{ 'article.create.submit'| trans }}">
-    {{ form_end(myform) }}
 {% endblock %}

@@ -8,11 +8,11 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-    <nav>
-        <a href="{{ path('article') }}"><button>Liste article</button></a>
-       <a href="{{ path('article_new') }}"> <button>Creation</button></a>
-       <a href="{{ path('author_index') }}"> <button>Liste auteur</button></a>
-       <a href="{{ path('author_new') }}"> <button>Creation auteur</button></a>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="{{ path('article') }}">Liste article</a>
+       <a href="{{ path('article_new') }}">Creation</a>
+       <a href="{{ path('author_index') }}">Liste auteur</a>
+       <a href="{{ path('author_new') }}">Creation auteur</a>
     </nav>
     {% for category, messages in app.flashes %}
         {% for message in messages %}

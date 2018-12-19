@@ -46,3 +46,9 @@ author:
 flash:
   success:
     article-created: Bravo pour lajout
+
+
+good:
+  excellent: Excellent %name% ta tout déchiré
+  bravo: Bravo %name% tu t'es bien débrouillé
+  mouais: Mouais %name% taurais pus mieux faire
