@@ -52,3 +52,9 @@ good:
   excellent: Excellent %name% ta tout déchiré
   bravo: Bravo %name% tu t'es bien débrouillé
   mouais: Mouais %name% taurais pus mieux faire
+user:
+  entity:
+    roles_choices:
+      ROLE_USER: Utilisateur
+      ROLE_ADMIN: Administrateur
+      ROLE_MODERATOR: Moderateur

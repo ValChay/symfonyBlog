@@ -30,13 +30,13 @@ private $translitor;
         $this->translitor = $translator;
     }
 
-    public function welldone(Author $author){
+    public function welldone(){
 
-        // Je prend un index au hasard dans le tableau
-        $level = array_rand(self::MSGS);
+        // On recupere le tableau de message et on affiche le message en randome
+        $level = self::MSGS[array_rand(self::MSGS)];
         // on récupère les auteur
         $allAuthors = $this->repository->findAll();
-
+// on récupère les tableau et on affiche le nom d'un auteur au hasard
      $authorName = $allAuthors[array_rand($allAuthors)]->getName();
 
      return $this->translitor->trans(
@@ -45,6 +45,4 @@ private $translitor;
      );
 
     }
-
-
 }
