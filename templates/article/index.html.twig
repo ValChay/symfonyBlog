@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'article.index.title' | trans }}{% endblock %}
+
+{% block body %}
+{{ weldonne }}
+    <ul>
+        {% for item in list %}
+            <h3><a href="{{ path('article_show', {id: item.id}) }}">lien</a></h3>
+           <p>{{ item.title }}</p>
+           <p>{{ item.creation | date('d/m/y ') }}</p>
+           <p>{{ item.body }}</p>
+            {% if is_granted('ROLE_USER') %}
+            <button class="success"><a href="{{ path('article_edit', { 'id' :item.id}) }}">{{'article.edit.submit'| trans }}</a></button>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+{% endblock %}
